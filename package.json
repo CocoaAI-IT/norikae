@@ -2,12 +2,16 @@
   "name": "norikaeapp",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@10.14.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:pages": "GITHUB_PAGES=true next build",
     "start": "next start",
+    "export": "GITHUB_PAGES=true next build",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "deploy:pages": "pnpm run build:pages && npx gh-pages -d out"
   },
   "dependencies": {
     "next": "^14.2.35",

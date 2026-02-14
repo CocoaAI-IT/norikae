@@ -5,11 +5,12 @@
 - そのまま直通
 - 京都で一度改札を出る（野洲→京都 + 京都→大阪）
 
-## Setup
+## Setup (`mise` + `pnpm`)
 
 ```bash
-npm install
-npm run dev
+mise install
+pnpm install
+pnpm dev
 ```
 
 `http://localhost:3000` で確認できます。
@@ -17,9 +18,24 @@ npm run dev
 ## Test / Build
 
 ```bash
-npm test
-npm run build
+pnpm test
+pnpm build
 ```
+
+## Deploy (GitHub Pages)
+
+### 自動デプロイ（推奨）
+
+- `main` ブランチに push すると `.github/workflows/deploy.yml` で自動デプロイされます。
+- GitHub の `Settings > Pages` で `Source: GitHub Actions` を選択してください。
+
+### 手動デプロイ
+
+```bash
+pnpm run deploy:pages
+```
+
+`gh-pages` ブランチへ `out/` の静的ファイルを push します。
 
 ## Fare Data Update
 
