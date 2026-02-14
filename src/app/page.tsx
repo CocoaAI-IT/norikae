@@ -9,7 +9,7 @@ export default function Home() {
         <p className="badge">MVP</p>
         <h1>途中下車すると安い？</h1>
         <p>
-          野洲から大阪に行くとき、京都で一回降りるパターンと直通を運賃で比較します。
+          野洲発/大阪発の両方向で、京都で一回降りるパターンと直通を運賃・時刻で比較します。
         </p>
       </header>
 
@@ -21,4 +21,3 @@ export default function Home() {
     </main>
   );
 }
-

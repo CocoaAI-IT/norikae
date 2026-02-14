@@ -7,6 +7,63 @@
     "leg1Fare": 510,
     "leg2Fare": 580
   },
+  "timetable": {
+    "timezone": "Asia/Tokyo",
+    "transferMin": 5,
+    "weekday": {
+      "yasu_to_osaka": {
+        "direct": [
+          { "trainId": "D001", "departAt": "08:55", "arriveAt": "09:55" },
+          { "trainId": "D002", "departAt": "09:12", "arriveAt": "10:08" },
+          { "trainId": "D003", "departAt": "09:28", "arriveAt": "10:23" },
+          { "trainId": "D004", "departAt": "09:44", "arriveAt": "10:39" },
+          { "trainId": "D005", "departAt": "10:02", "arriveAt": "10:57" },
+          { "trainId": "D006", "departAt": "10:18", "arriveAt": "11:13" }
+        ],
+        "leg1": [
+          { "trainId": "L1-001", "departAt": "08:58", "arriveAt": "09:31" },
+          { "trainId": "L1-002", "departAt": "09:13", "arriveAt": "09:45" },
+          { "trainId": "L1-003", "departAt": "09:26", "arriveAt": "09:58" },
+          { "trainId": "L1-004", "departAt": "09:41", "arriveAt": "10:13" },
+          { "trainId": "L1-005", "departAt": "09:57", "arriveAt": "10:29" },
+          { "trainId": "L1-006", "departAt": "10:14", "arriveAt": "10:46" }
+        ],
+        "leg2": [
+          { "trainId": "L2-001", "departAt": "09:38", "arriveAt": "10:06" },
+          { "trainId": "L2-002", "departAt": "09:52", "arriveAt": "10:20" },
+          { "trainId": "L2-003", "departAt": "10:04", "arriveAt": "10:33" },
+          { "trainId": "L2-004", "departAt": "10:18", "arriveAt": "10:47" },
+          { "trainId": "L2-005", "departAt": "10:34", "arriveAt": "11:03" },
+          { "trainId": "L2-006", "departAt": "10:50", "arriveAt": "11:19" }
+        ]
+      },
+      "osaka_to_yasu": {
+        "direct": [
+          { "trainId": "RD-001", "departAt": "08:50", "arriveAt": "09:46" },
+          { "trainId": "RD-002", "departAt": "09:07", "arriveAt": "10:03" },
+          { "trainId": "RD-003", "departAt": "09:23", "arriveAt": "10:19" },
+          { "trainId": "RD-004", "departAt": "09:39", "arriveAt": "10:35" },
+          { "trainId": "RD-005", "departAt": "09:56", "arriveAt": "10:52" },
+          { "trainId": "RD-006", "departAt": "10:12", "arriveAt": "11:08" }
+        ],
+        "leg1": [
+          { "trainId": "RL1-001", "departAt": "08:53", "arriveAt": "09:21" },
+          { "trainId": "RL1-002", "departAt": "09:08", "arriveAt": "09:36" },
+          { "trainId": "RL1-003", "departAt": "09:22", "arriveAt": "09:50" },
+          { "trainId": "RL1-004", "departAt": "09:37", "arriveAt": "10:05" },
+          { "trainId": "RL1-005", "departAt": "09:54", "arriveAt": "10:22" },
+          { "trainId": "RL1-006", "departAt": "10:10", "arriveAt": "10:38" }
+        ],
+        "leg2": [
+          { "trainId": "RL2-001", "departAt": "09:28", "arriveAt": "10:00" },
+          { "trainId": "RL2-002", "departAt": "09:42", "arriveAt": "10:14" },
+          { "trainId": "RL2-003", "departAt": "09:56", "arriveAt": "10:28" },
+          { "trainId": "RL2-004", "departAt": "10:12", "arriveAt": "10:44" },
+          { "trainId": "RL2-005", "departAt": "10:28", "arriveAt": "11:00" },
+          { "trainId": "RL2-006", "departAt": "10:44", "arriveAt": "11:16" }
+        ]
+      }
+    }
+  },
   "updatedAt": "2026-02-14T00:00:00+09:00"
 }
-

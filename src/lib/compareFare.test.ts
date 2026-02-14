@@ -1,18 +1,9 @@
+import fareMaster from "@/data/fareMaster.json";
 import { describe, expect, it } from "vitest";
 import { compareFare, validateFareMaster } from "@/lib/compareFare";
 import type { FareMaster } from "@/types/fare";
 
-const baseMaster: FareMaster = {
-  odId: "yasu_osaka",
-  fareType: "ic_adult",
-  directFare: 1170,
-  stopover: {
-    via: "kyoto",
-    leg1Fare: 510,
-    leg2Fare: 580
-  },
-  updatedAt: "2026-02-14T00:00:00+09:00"
-};
+const baseMaster = fareMaster as FareMaster;
 
 describe("compareFare", () => {
   it("returns stopover as cheaper", () => {

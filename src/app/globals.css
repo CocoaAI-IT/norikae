@@ -136,6 +136,112 @@ body {
   background: rgba(36, 89, 209, 0.11);
 }
 
+.routeFilters {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.filterLabel {
+  margin: 0 0 6px;
+  font-size: 0.84rem;
+  color: var(--subtle);
+}
+
+.directionTabs {
+  display: inline-flex;
+  gap: 8px;
+}
+
+.tabButton {
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  border-radius: 10px;
+  font: inherit;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.tabActive {
+  color: #fff;
+  border-color: #0f5560;
+  background: linear-gradient(120deg, #0f5560, #1b7b89);
+}
+
+.timePickerWrap {
+  max-width: 180px;
+}
+
+.timeInput {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  padding: 8px 10px;
+}
+
+.timeSection {
+  margin-top: 14px;
+}
+
+.timeSectionTitle {
+  margin: 0 0 10px;
+  font-size: 1rem;
+}
+
+.timeColumns {
+  display: grid;
+  gap: 12px;
+}
+
+.timeCard {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.timeCard h4 {
+  margin: 0 0 8px;
+  color: var(--subtle);
+}
+
+.timeList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.timeRow {
+  padding: 8px 0;
+  border-top: 1px dashed var(--line);
+}
+
+.timeRow:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.routeSummary {
+  margin: 0;
+  font-weight: 700;
+}
+
+.routeMeta {
+  margin: 4px 0 0;
+  color: var(--subtle);
+  font-size: 0.84rem;
+}
+
+.emptyRow {
+  margin: 0;
+  color: var(--subtle);
+  font-size: 0.9rem;
+}
+
 .metaLine {
   margin: 12px 0 0;
   font-size: 0.82rem;
@@ -166,8 +272,16 @@ body {
 }
 
 @media (min-width: 620px) {
+  .routeFilters {
+    grid-template-columns: 1fr auto;
+    align-items: end;
+  }
+
   .cardGrid {
     grid-template-columns: 1fr 1fr;
   }
-}
 
+  .timeColumns {
+    grid-template-columns: 1fr 1fr;
+  }
+}
