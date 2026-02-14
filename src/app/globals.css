@@ -1,0 +1,173 @@
+:root {
+  --bg-top: #fef9ee;
+  --bg-mid: #f4fff8;
+  --bg-bottom: #e7f2ff;
+  --ink: #102032;
+  --subtle: #4f6476;
+  --panel: rgba(255, 255, 255, 0.78);
+  --card: #ffffff;
+  --line: rgba(16, 32, 50, 0.12);
+  --direct: #0f9960;
+  --stopover: #d14900;
+  --neutral: #2459d1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 10% 12%, rgba(255, 180, 79, 0.35), transparent 36%),
+    radial-gradient(circle at 84% 18%, rgba(45, 166, 120, 0.23), transparent 42%),
+    linear-gradient(180deg, var(--bg-top), var(--bg-mid) 45%, var(--bg-bottom));
+  font-family: "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN", "BIZ UDPGothic", sans-serif;
+}
+
+.pageWrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+.hero {
+  margin-bottom: 18px;
+  animation: fadeSlide 480ms ease-out both;
+}
+
+.badge {
+  display: inline-block;
+  margin: 0 0 8px;
+  padding: 4px 9px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.74);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(1.6rem, 4.6vw, 2.2rem);
+  line-height: 1.2;
+}
+
+.hero p {
+  margin: 10px 0 0;
+  color: var(--subtle);
+  line-height: 1.65;
+}
+
+.panel {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  backdrop-filter: blur(6px);
+  background: var(--panel);
+  box-shadow: 0 18px 26px -22px rgba(16, 32, 50, 0.8);
+  animation: fadeSlide 620ms ease-out both;
+}
+
+.panelTitle {
+  margin: 0 0 12px;
+  font-size: 1.15rem;
+}
+
+.cardGrid {
+  display: grid;
+  gap: 12px;
+}
+
+.fareCard {
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: var(--card);
+}
+
+.fareCard h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--subtle);
+}
+
+.fareValue {
+  margin: 8px 0 2px;
+  font-size: clamp(1.5rem, 6vw, 2.1rem);
+  font-weight: 700;
+}
+
+.fareBreakdown {
+  margin: 0;
+  color: var(--subtle);
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+.resultBanner {
+  margin: 14px 0 0;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  font-weight: 700;
+  text-align: center;
+}
+
+.resultDirect {
+  color: var(--direct);
+  background: rgba(15, 153, 96, 0.11);
+}
+
+.resultStopover {
+  color: var(--stopover);
+  background: rgba(209, 73, 0, 0.11);
+}
+
+.resultNeutral {
+  color: var(--neutral);
+  background: rgba(36, 89, 209, 0.11);
+}
+
+.metaLine {
+  margin: 12px 0 0;
+  font-size: 0.82rem;
+  color: var(--subtle);
+}
+
+.errorText {
+  margin: 0;
+  font-weight: 600;
+  color: #9f2f00;
+}
+
+.footerNote {
+  margin-top: 12px;
+  color: var(--subtle);
+  font-size: 0.84rem;
+}
+
+@keyframes fadeSlide {
+  from {
+    transform: translateY(8px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 620px) {
+  .cardGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
